@@ -162,7 +162,7 @@ const Services = () => {
                 </div>
                 <div className='flex flex-col gap-6'>
                     <h2 className='text-[#004733]  font-semibold text-2xl'>Timeline for homebuying process<sup>1</sup></h2>
-                    <p className='text-[#004733]'>Does the process of buying a home seem daunting? Don't stress. We broke it down in 8 easy steps.<sup>1</sup>
+                    <p className='text-[#004733]'>Does the process of buying a home seem daunting? Don not stress. We broke it down in 8 easy steps.<sup>1</sup>
                     </p>
                     <div><IoIosArrowRoundForward className='font-bold size-8 border-2 text-[#004733] rounded-full  border-gray-400
                     hover:bg-[#004733] hover:text-white ease-in-out duration-200'/></div>
