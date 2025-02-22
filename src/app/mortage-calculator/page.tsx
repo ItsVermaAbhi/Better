@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import React, { useEffect, useState } from 'react'
 import mortage from '../../../images/photo/mortgage-calculator.webp'
 import Footer from '@/components/Footer'
+import Image from 'next/image'
 
 const Page = () => {
 
@@ -29,7 +30,7 @@ const Page = () => {
 
   const calculateMortgage = ({P, r, n}: MortageProps) => {
     r = r / 1200; 
-    let M = P * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+    const M = P * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
     return parseFloat(M.toFixed(2));
 }
 
@@ -153,7 +154,7 @@ useEffect(
           <p className='font-bold text-3xl'>Monthly Payment beakdown</p>
           <p className='font-semibold text-2xl'>{`$ ${total}/mo`}</p>
           <div>
-            <img className='w-[30vw]' src={mortage.src} alt="" />
+            <Image className='w-[30vw]' src={mortage.src} alt="" />
           </div>
         </div>
         <div className='flex flex-col w-[60%] gap-5'>

@@ -8,6 +8,8 @@ import goldman from '../../../images/logo/goldmanSachs.svg'
 import kpcb from '../../../images/logo/kpcb.webp'
 import americanExpree from '../../../images/logo/American_Express_logo_(2018).svg.png'
 import Footer from '@/components/Footer'
+import Image from 'next/image'
+import Link from 'next/link'
 // import { AiOutlinePlayCircle } from 'react-icons/ai'
 
 const logos = [softbank, ally, citi, goldman, kpcb,americanExpree]
@@ -108,10 +110,10 @@ function Clients(){
                       const key = Object.keys(links)[index] as keyof typeof links;
                       const link = links[key];
                     return <li key={index} className='size-[15%] md:size-[13%]'>
-                        
-                        <a href={link}>
-                        <img className='grayscale size-[60%]' src={item.src} alt={item} />
-                        </a>
+                        <Link href={link}>
+                        <Image src={item.src} alt={item}></Image>
+                        </Link>
+                       
                     </li>
                 })}
             </ul>

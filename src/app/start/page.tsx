@@ -8,7 +8,7 @@ import third from '../../../images/photo/third.png'
 import percent from '../../../images/photo/percent.png'
 import dollar from '../../../images/photo/dollar.png'
 import mobile from '../../../images/photo/mobile.png'
-import { StaticImageData } from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Footer from '@/components/Footer'
 
 
@@ -32,7 +32,7 @@ function Content(){
     return (
         <div className='pb-9'>
            <div className='flex flex-col gap-2 items-center'>
-           <h1 className='text-5xl font-bold'>Hi, I'm Betsy!</h1>
+           <h1 className='text-5xl font-bold'>Hi, I am Betsy!</h1>
             <h1  className='text-5xl font-bold'>What can I help you with?</h1>
            </div>
 
@@ -52,7 +52,7 @@ function CustomDiv({content, img}: {content: string, img: StaticImageData}){
         flex items-center px-3 gap-2 border-2 border-gray-300 rounded-lg py-2 w-[50%] hover:border-4 hover:ease-in-out hover:duratin-200 hover:border-[#067a41]
         `}>
             <div className='w-[80%] flex gap-3 items-center'>
-                <img className='w-[15%] img' src={img.src} alt="" />
+                <Image className='w-[15%] img' src={img.src} alt="" />
                 <div className='text-lg lg:text-2xl font-bold'>
                 {content}
                 </div>
@@ -81,11 +81,11 @@ function Promotion(){
                 <p>After Few questions you will unlock:</p>
                 <div className='flex flex-col items-start'>
                 <div className='flex gap-2 items-center justify-center'>
-                <img className='w-[5%] img' src={percent.src} alt="" />
+                <Image className='w-[5%] img' src={percent.src} alt="" />
                     <p>Custom mortgage rates</p>
                 </div>
                 <div  className='flex gap-2 items-center justify-center'>
-                <img className='w-[5%] img' src={dollar.src} alt="" />
+                <Image className='w-[5%] img' src={dollar.src} alt="" />
                     <p> Exclusive offers   </p>
                  </div>
 

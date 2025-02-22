@@ -51,7 +51,7 @@ const Navbar = () => {
     <div className='flex justify-between pt-5 px-9 pb-3 overflow-x-hidden bg-[#004733] '>
       <div >
         <ul className='sm:flex lg:gap-10 md:gap-3 gap-0 justify-between'>
-          {navItems.map((item,index)=> {
+          {navItems.map((item)=> {
             const HoverComponent = hoverCards[item]
            
             return(

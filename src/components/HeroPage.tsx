@@ -6,6 +6,7 @@ import googlelogo  from "../../images/photo/google.png"
 import star  from "../../images/photo/star.png"
 import halfStar  from "../../images/photo/halfStar.png"
 import { TbClockHour6 } from 'react-icons/tb'
+import Image from 'next/image'
 
 
 
@@ -13,7 +14,7 @@ import { TbClockHour6 } from 'react-icons/tb'
 const HeroPage = () => {
   return (
     <div className='relative h-[110vh] w-full  md:h-[110vh] bg-[#004733] md:pb-[100px] z-10 overflow-hidden'>
-      <img className='absolute left-[16%] sm:left-[25%] h-[72%] bottom-[-10%] md:h-[90vh] md:pb-[100px] md:h-[80vw] md:bottom-[-20%] lg:left-[35%] lg:h-[50vw] md:left-[30%]' src={heroImage.src} alt="" />
+      <Image className='absolute left-[16%] sm:left-[25%] h-[72%] bottom-[-10%] md:h-[90vh] md:pb-[100px] md:h-[80vw] md:bottom-[-20%] lg:left-[35%] lg:h-[50vw] md:left-[30%]' src={heroImage.src} alt="" />
       <div className='absolute top-[15%] left-[25%] w-[45vw] leading-[100px]'>
         <h1 className={`text-[#1ee07f] leading-[50px] pl-[10px] pt-[20px] text-[42px] sm:text-[40px] md:pt-[50px] lg:text-[110px] lg:leading-[100px] md:text-[70px] md:leading-[80px] text-center `}>Mortages made simple</h1>
       </div>
@@ -31,14 +32,14 @@ const HeroPage = () => {
 
        <div className='flex gap-2 justify-center item-center'>
        <div className=''>
-            <img className='w-[24px]  ' src={googlelogo.src} alt="" />
+            <Image className='w-[24px]  ' src={googlelogo.src} alt="" />
         </div>
         <div className='flex size-[24px]  gap-2'>
-            <img src={star.src} alt="" />
-            <img src={star.src} alt="" />
-            <img src={star.src} alt="" />
-            <img src={star.src} alt="" />
-            <img src={halfStar.src} alt="" />
+            <Image src={star.src} alt="" />
+            <Image src={star.src} alt="" />
+            <Image src={star.src} alt="" />
+            <Image src={star.src} alt="" />
+            <Image src={halfStar.src} alt="" />
         </div>
        </div>
 

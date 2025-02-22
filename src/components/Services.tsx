@@ -15,6 +15,7 @@ import goodDti from '../../images/photo/good-dti.webp'
 import realtor from '../../images/photo/buy-house-without-realtor.webp'
 import timeline from '../../images/photo/loan-timeline.webp'
 import conventional from '../../images/photo/conventional-loan.webp'
+import Image from 'next/image'
 
 const Services = () => {
     const [active, setActive ] = useState("Our products")
@@ -41,7 +42,7 @@ const Services = () => {
                 <h2 className='text-[#004733] font-semibold text-2xl'>Buying Your first home with Better</h2>
                 <div><IoIosArrowRoundForward className='font-bold size-8 border-2 
                 hover:bg-[#004733] hover:text-white ease-in-out duration-200 text-[#004733] rounded-full  border-gray-400'/></div>
-                <img className='rounded-lg' src={home.src} alt="home" />
+                <Image className='rounded-lg' src={home.src} alt="home" />
             </div>
             <div className="flex gap-3 border-2  lg:col-span-2 lg:col-start-2  px-[5%] py-[4%] bg-[#f0f7f1]">
             <div className='flex flex-col gap-6'>
@@ -53,14 +54,14 @@ const Services = () => {
                 hover:bg-[#004733] hover:text-white ease-in-out duration-200 text-[#004733] rounded-full  border-gray-400'/></div>
             </div>
             <div>
-                <img src={oneDay.src} alt="" />
+                <Image src={oneDay.src} alt="" />
             </div>
             </div>
         </div>
         <div className="grid lg:grid-cols-3 mt-8 gap-6">
             <div className="flex gap-5 border-2  lg:col-span-2 lg:col-start-1  px-[5%] py-[4%] bg-[#f0f7f1]">
                 <div className=''>
-                    <img className='rounded ' src={heloc.src} alt="" />
+                    <Image className='rounded ' src={heloc.src} alt="" />
                 </div>
                 <div className='flex flex-col gap-6'>
                     <h2 className='text-[#004733] font-semibold text-2xl'>Better HELOC<sup>1</sup></h2>
@@ -76,7 +77,7 @@ const Services = () => {
                     <h2 className='text-[#004733] font-semibold text-2xl'>Insurance</h2>
                     <div><IoIosArrowRoundForward className='font-bold size-8 border-2 text-[#004733] rounded-full
                     hover:bg-[#004733] hover:text-white ease-in-out duration-200  border-gray-400'/></div>
-                    <img className='rounded-lg' src={insurance.src} alt="home" />
+                    <Image className='rounded-lg' src={insurance.src} alt="home" />
                  </div>
 
                 
@@ -89,25 +90,25 @@ const Services = () => {
                 <h2 className='text-[#004733] font-semibold text-2xl'>Mortage Calculator</h2>
                 <div><IoIosArrowRoundForward className='font-bold size-8 border-2
                 hover:bg-[#004733] hover:text-white ease-in-out duration-200 text-[#004733] rounded-full  border-gray-400'/></div>
-                <img className='rounded-lg' src={mortgageCalculator.src} alt="home" />
+                <Image className='rounded-lg' src={mortgageCalculator.src} alt="home" />
             </div>
             <div className="flex gap-3 border-2  lg:col-span-2 lg:col-start-2  px-[5%] py-[4%] bg-[#f0f7f1]">
             <div className='flex flex-col gap-6'>
                 <h2 className='text-[#004733] font-semibold text-2xl'>Affordability Calculator<sup>1</sup></h2>
-                <p className='text-[#004733]'>Got homeownership dreams? Let's puts some numbers behind them. Our affordability calculator estimates the maximum home you can afford.<sup>1</sup>
+                <p className='text-[#004733]'>Got homeownership dreams? Let us puts some numbers behind them. Our affordability calculator estimates the maximum home you can afford.<sup>1</sup>
                 </p>
                 <div><IoIosArrowRoundForward className='font-bold size-8 border-2
                 hover:bg-[#004733] hover:text-white ease-in-out duration-200 text-[#004733] rounded-full  border-gray-400'/></div>
             </div>
             <div>
-                <img src={affordabilityCalculator.src} alt="" />
+                <Image src={affordabilityCalculator.src} alt="" />
             </div>
             </div>
         </div>
         <div className="grid lg:grid-cols-3 mt-8 gap-6">
             <div className="flex gap-5 border-2  lg:col-span-2 lg:col-start-1  px-[5%] py-[4%] bg-[#f0f7f1]">
                 <div className=''>
-                    <img className='rounded ' src={helocCalculator.src} alt="" />
+                    <Image className='rounded ' src={helocCalculator.src} alt="" />
                 </div>
                 <div className='flex flex-col gap-6'>
                     <h2 className='text-[#004733] font-semibold text-2xl'>HELOC calculator<sup>1</sup></h2>
@@ -124,7 +125,7 @@ const Services = () => {
                     <h2 className='text-[#004733] font-semibold text-2xl'>Fixed rate loan comparision calculator</h2>
                     <div><IoIosArrowRoundForward className='font-bold size-8 border-2 text-[#004733] rounded-full  border-gray-400
                     hover:bg-[#004733] hover:text-white ease-in-out duration-200'/></div>
-                    <img className='rounded-lg' src={fixedRateCalculator.src} alt="home" />
+                    <Image className='rounded-lg' src={fixedRateCalculator.src} alt="home" />
                  </div>
 
                 
@@ -139,7 +140,7 @@ const Services = () => {
                 <h2 className='text-[#004733] font-semibold text-2xl sm:text-lg '>What is good Debt-to-income ration for home loan?</h2>
                 <div><IoIosArrowRoundForward className='font-bold size-8 border-2
                 hover:bg-[#004733] hover:text-white ease-in-out duration-200 text-[#004733] rounded-full  border-gray-400'/></div>
-                <img className='rounded-lg' src={goodDti.src} alt="home" />
+                <Image className='rounded-lg' src={goodDti.src} alt="home" />
             </div>
             <div className="flex gap-3 border-2  lg:col-span-2 lg:col-start-2  px-[5%] py-[4%] bg-[#f0f7f1]">
             <div className='flex flex-col gap-6'>
@@ -150,14 +151,14 @@ const Services = () => {
                 hover:bg-[#004733] hover:text-white ease-in-out duration-200 text-[#004733] rounded-full  border-gray-400'/></div>
             </div>
             <div className='size-[60%]'>
-                <img src={realtor.src} alt="" />
+                <Image src={realtor.src} alt="" />
             </div>
             </div>
         </div>
         <div className="grid lg:grid-cols-3 mt-8 gap-6">
             <div className="flex gap-5 border-2  lg:col-span-2 lg:col-start-1  px-[5%] py-[4%] bg-[#f0f7f1]">
                 <div className='size-[60%]'>
-                    <img className='rounded ' src={timeline.src} alt="" />
+                    <Image className='rounded ' src={timeline.src} alt="" />
                 </div>
                 <div className='flex flex-col gap-6'>
                     <h2 className='text-[#004733]  font-semibold text-2xl'>Timeline for homebuying process<sup>1</sup></h2>
@@ -173,7 +174,7 @@ const Services = () => {
                     <h2 className='text-[#004733] font-semibold text-2xl'>Conventional loan requirements</h2>
                     <div><IoIosArrowRoundForward className='font-bold size-8 border-2 text-[#004733] rounded-full  border-gray-400
                     hover:bg-[#004733] hover:text-white ease-in-out duration-200'/></div>
-                    <img className='rounded-lg' src={conventional.src} alt="home" />
+                    <Image className='rounded-lg' src={conventional.src} alt="home" />
                  </div>
 
                 
