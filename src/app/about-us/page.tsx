@@ -23,9 +23,9 @@ const links = {
 
 const page = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Navbar/>
-      <div className='px-[120px]'>
+      <div className='px-[80px] lg::px-[120px]'>
       <Hero/>
       <Story/>
       
@@ -33,7 +33,7 @@ const page = () => {
       <div>
       <Cover/>
       </div>
-      <div className='px-[120px]'>
+      <div className='px-[80px] lg:px-[120px]'>
       <Clients/>
       <CompanyTimeline/>
       </div>
@@ -48,29 +48,25 @@ function Hero(){
     return (
         <div className='flex flex-col gap-4 justify-center py-[40vh] items-center'>
             <h2 className='green text-2xl font-semibold'>Our mission</h2>
-            <h1 className='text-5xl font-semibold w-[70%] '>We’re making homeownership simpler, faster — and most importantly, more accessible for all Americans.</h1>
+            <h1 className='text-2xl md:text-5xl font-semibold w-full md:w-[70%] '>We’re making homeownership simpler, faster — and most importantly, more accessible for all Americans.</h1>
         </div>
     )
 }
 
 function Story(){
     return (
-        <div className='flex justify-between pb-[10vh] gap-[10%]'>
-           <div className='flex flex-col gap-8'>
+        <div className='flex md:flex-row flex-col justify-between pb-[10vh] gap-[10%]'>
+           <div className='flex md:order-1 order-2 flex-col gap-8'>
             <h2 className="text-2xl font-semibold">The status quo is broken</h2>
                 <p className='text-base'>The traditional processes around homeownership are opaque and stressful. Fees aren’t transparent and some are 
                     simply outrageous in size. Traditional mortgage lending is rife with unnecessary fees and slow, painful processes.
                     It’s a system set up to benefit insiders — not you. Better.com CEO, Vishal Garg, set out to change that.</p>
                 
-                <button className='button px-9 w-[50%] py-5 rounded-lg text-white font-semibold'>Read Vishals Story</button>
+                <button className='button px-9 w-full lg:w-[50%] py-5 rounded-lg text-white font-semibold'>Read Vishals Story</button>
            </div>
 
-           <div className='relaive'>
-           {/* <AiOutlinePlayCircle className='absolute z-30 text-white right-[20%] top-[55%] '/>
-            <a href="https://youtu.be/1KjYlLBM9j4">
-            <img className='h-[50vh] w-[150vw] ' src={vishalImage.src} alt="vishalImage" />
-            </a> */}
-
+           <div className='relaive order-1 md:order-2'>
+          
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1KjYlLBM9j4?si=6-xvrOtAto-N4LUC" title="YouTube video player"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" ></iframe>
            
            </div>
@@ -105,13 +101,13 @@ function Cover(){
 
 function Clients(){
     return (
-        <div className='py-[20vh] flex flex-col items-center gap-9'>
+        <div className='py-[20vh]  flex flex-col items-center gap-9'>
             <h2 className='text-3xl font-semibold'>Backed by</h2>
-            <ul className='flex items-center justify-center gap-4'>
+            <ul className='flex flex-wrap items-center justify-center gap-4'>
                 {logos.map((item, index)=> {
                       const key = Object.keys(links)[index] as keyof typeof links;
                       const link = links[key];
-                    return <li key={index} className='size-[13%]'>
+                    return <li key={index} className='size-[15%] md:size-[13%]'>
                         
                         <a href={link}>
                         <img className='grayscale size-[60%]' src={item.src} alt={item} />
@@ -212,7 +208,7 @@ function CompanyTimeline(){
 
 function Button({content}: {content: string}){
     return (
-        <button className='button font-bold text-2xl text-white rounded-lg w-[10%] px-5 py-3'>{content}</button>
+        <button className='button font-bold text-2xl text-white rounded-lg w-[20%] lg:w-[10%] px-5 py-3'>{content}</button>
     )
 }
 

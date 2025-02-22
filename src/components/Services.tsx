@@ -24,7 +24,7 @@ const Services = () => {
     <div className='flex flex-col gap-4 pb-[100px] px-[120px]'>
      <div className='flex flex-col gap-2'>
         <h2 className='text-4xl font-bold'>Got Questions?</h2>
-        <div className='flex gap-4 justify-between'>
+        <div className='flex flex-col lg:flex-row    gap-4 justify-between '>
             <div><h2 className='text-4xl font-bold'>We have got answers</h2></div>
             <div className='flex gap-3'>
                 <BorderedButton active={active} content='Our products' onClick={()=> setActive("Our products")}/>
@@ -36,14 +36,14 @@ const Services = () => {
      </div>
 
     {active == "Our products" && <div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid  lg:grid-cols-3 gap-6">
             <div className="border-2 flex flex-col gap-6 py-[8%] px-[15%]  bg-[#f0f7f1] ">
                 <h2 className='text-[#004733] font-semibold text-2xl'>Buying Your first home with Better</h2>
                 <div><IoIosArrowRoundForward className='font-bold size-8 border-2 
                 hover:bg-[#004733] hover:text-white ease-in-out duration-200 text-[#004733] rounded-full  border-gray-400'/></div>
                 <img className='rounded-lg' src={home.src} alt="home" />
             </div>
-            <div className="flex gap-3 border-2  col-span-2 col-start-2  px-[5%] py-[4%] bg-[#f0f7f1]">
+            <div className="flex gap-3 border-2  lg:col-span-2 lg:col-start-2  px-[5%] py-[4%] bg-[#f0f7f1]">
             <div className='flex flex-col gap-6'>
                 <h2 className='text-[#004733] font-semibold text-2xl'>One Day Mortage<sup>1</sup></h2>
                 <p className='text-[#004733]'>Kick your home laon into hyperdrive. Going from locked rate to commitment Letter takes weeks for traditianal lenders. We do it in a singele  day.
@@ -57,8 +57,8 @@ const Services = () => {
             </div>
             </div>
         </div>
-        <div className="grid grid-cols-3 mt-8 gap-6">
-            <div className="flex gap-5 border-2  col-span-2 col-start-1  px-[5%] py-[4%] bg-[#f0f7f1]">
+        <div className="grid lg:grid-cols-3 mt-8 gap-6">
+            <div className="flex gap-5 border-2  lg:col-span-2 lg:col-start-1  px-[5%] py-[4%] bg-[#f0f7f1]">
                 <div className=''>
                     <img className='rounded ' src={heloc.src} alt="" />
                 </div>
@@ -84,14 +84,14 @@ const Services = () => {
      </div>}
 
      {active == "Calculators" && <div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-6">
             <div className="border-2 flex flex-col gap-6 py-[8%] px-[15%]  bg-[#f0f7f1] ">
                 <h2 className='text-[#004733] font-semibold text-2xl'>Mortage Calculator</h2>
                 <div><IoIosArrowRoundForward className='font-bold size-8 border-2
                 hover:bg-[#004733] hover:text-white ease-in-out duration-200 text-[#004733] rounded-full  border-gray-400'/></div>
                 <img className='rounded-lg' src={mortgageCalculator.src} alt="home" />
             </div>
-            <div className="flex gap-3 border-2  col-span-2 col-start-2  px-[5%] py-[4%] bg-[#f0f7f1]">
+            <div className="flex gap-3 border-2  lg:col-span-2 lg:col-start-2  px-[5%] py-[4%] bg-[#f0f7f1]">
             <div className='flex flex-col gap-6'>
                 <h2 className='text-[#004733] font-semibold text-2xl'>Affordability Calculator<sup>1</sup></h2>
                 <p className='text-[#004733]'>Got homeownership dreams? Let's puts some numbers behind them. Our affordability calculator
@@ -105,8 +105,8 @@ const Services = () => {
             </div>
             </div>
         </div>
-        <div className="grid grid-cols-3 mt-8 gap-6">
-            <div className="flex gap-5 border-2  col-span-2 col-start-1  px-[5%] py-[4%] bg-[#f0f7f1]">
+        <div className="grid lg:grid-cols-3 mt-8 gap-6">
+            <div className="flex gap-5 border-2  lg:col-span-2 lg:col-start-1  px-[5%] py-[4%] bg-[#f0f7f1]">
                 <div className=''>
                     <img className='rounded ' src={helocCalculator.src} alt="" />
                 </div>
@@ -135,14 +135,14 @@ const Services = () => {
 
      
      {active == "Guides & FAQs" && <div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-6">
             <div className="border-2 flex flex-col gap-6 py-[8%] px-[15%]  bg-[#f0f7f1] ">
-                <h2 className='text-[#004733] font-semibold text-2xl'>What is good Debt-to-income ration for home loan?</h2>
+                <h2 className='text-[#004733] font-semibold text-2xl sm:text-lg '>What is good Debt-to-income ration for home loan?</h2>
                 <div><IoIosArrowRoundForward className='font-bold size-8 border-2
                 hover:bg-[#004733] hover:text-white ease-in-out duration-200 text-[#004733] rounded-full  border-gray-400'/></div>
                 <img className='rounded-lg' src={goodDti.src} alt="home" />
             </div>
-            <div className="flex gap-3 border-2  col-span-2 col-start-2  px-[5%] py-[4%] bg-[#f0f7f1]">
+            <div className="flex gap-3 border-2  lg:col-span-2 lg:col-start-2  px-[5%] py-[4%] bg-[#f0f7f1]">
             <div className='flex flex-col gap-6'>
                 <h2 className='text-[#004733] font-semibold text-2xl'>Buying a house without realtor<sup>1</sup></h2>
                 <p className='text-[#004733]'>Thinking of buying a house without real estate agent? Read this first.<sup>1</sup>
@@ -155,8 +155,8 @@ const Services = () => {
             </div>
             </div>
         </div>
-        <div className="grid grid-cols-3 mt-8 gap-6">
-            <div className="flex gap-5 border-2  col-span-2 col-start-1  px-[5%] py-[4%] bg-[#f0f7f1]">
+        <div className="grid lg:grid-cols-3 mt-8 gap-6">
+            <div className="flex gap-5 border-2  lg:col-span-2 lg:col-start-1  px-[5%] py-[4%] bg-[#f0f7f1]">
                 <div className='size-[60%]'>
                     <img className='rounded ' src={timeline.src} alt="" />
                 </div>

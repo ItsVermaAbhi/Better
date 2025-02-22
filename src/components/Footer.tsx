@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <>
     <hr></hr>
-    <div className='grid grid-cols-4 gap-9 pb-[150px] mt-[100px] px-[120px] '>
+    <div className='grid md:grid-cols-4 gap-9 pb-[150px] mt-[100px] px-[50px] md:px-[120px] '>
        
         <div className='flex flex-col gap-4'>
             <div className='flex flex-col gap-3'>

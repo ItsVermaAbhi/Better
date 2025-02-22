@@ -57,10 +57,10 @@ useEffect(
   ,[homePrice, monthlyPayment, downPayment, rate, time, insurance, hoa, utilites, pmi])
 
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <div className='fixed w-[100vw] z-30'><Navbar ></Navbar></div>
-      <div className='bg-[#f0f7f1] px-[120px] pb-[50px] pt-[100px] '>
-        <div className=' w-[50%] flex flex-col pb-8 '>
+      <div className='bg-[#f0f7f1] pr-[100px] pl-[120px] pb-[50px] pt-[100px] '>
+        <div className='w-full md:w-[50%] flex flex-col pb-8 '>
         <h1 className='text-4xl font-bold pb-[20px]'>Mortage Calculator</h1>
         <p>
         Our mortgage calculator includes key factors like homeowners association fees, property taxes, and private mortgage insurance (PMI).
@@ -68,10 +68,10 @@ useEffect(
         </p>
         </div>
         
-        <div className='grid grid-cols-3 gap-9 items-center justify-center'>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-9 items-center justify-center'>
           <div> 
             <p className='pb-2 font-semibold'>Home Price</p>
-            <input className='py-3 w-[55%] pl-5 border-2 border-gray-400 text-bold text-3xl hover:border-[#004733]'
+            <input className='py-3 w-[70%] md:w-[55%] pl-5 border-2 border-gray-400 text-bold text-xl md:text-3xl hover:border-[#004733]'
               onChange={(e) => setHomePrice( e.target.value.replace(/[^0-9]/g, ""))}
             
               
@@ -80,15 +80,15 @@ useEffect(
 
           <div> 
             <p className='pb-2 font-semibold'>Monthly Payment</p>
-            <p className='text-bold text-3xl py-3'>{`$ ${total}/mo`}</p>
+            <p className='text-bold text-3xl md:text-3xl py-3'>{`$ ${total}/mo`}</p>
           </div>
           <div>
-          <button className='bg-[#067a41] text-white rounded-lg mt-6  px-9 py-4'>Get pre-approved</button>
+          <button className='bg-[#067a41]  text-white rounded-lg mt-6  px-9 py-4'>Get pre-approved</button>
         </div>
         </div>
 
-        <div className='w-[90vw] mt-9'>
-          <input className='w-[90vw] bg-black'
+        <div className='w-[60vw] md:w-[90vw] mt-9'>
+          <input className='w-full bg-black'
            type="range"
            min={50000} 
            max={3000000}
@@ -99,8 +99,8 @@ useEffect(
          
         </div>
 
-        <div className='flex gap-[15%] justify-between mt-9'>
-            <div className='flex gap-8'>
+        <div className='flex  gap-[15%] justify-between mt-9'>
+            <div className='flex  m-5 gap-8'>
               <div className='border-2 relative border-gray-400 w-[50%]'>
                 <p className='absolute top-1 text-[13px] left-9'>ZIP code</p>
                 <input 
@@ -120,11 +120,11 @@ useEffect(
                  
                  <input
                  onChange={downPaymentHandle}
-                 className='text-xl bg-white w-5 border-l-2 border-gray-400 p-2 w-[25%] focus:outline-none' type="text" defaultValue={`${18} %`} />
+                 className='text-base flex  lg:text-xl bg-white w-5 border-l-2 border-gray-400 p-2 w-[25%] focus:outline-none' type="text" defaultValue={`${18} %`} />
               </div>
             </div>
 
-            <div className='flex gap-5'>
+            <div className='flex  gap-5'>
               <div className='border-2 relative border-gray-400 w-[50%]'>
               <p className='absolute top-1 text-[13px] left-8'>Interest rate</p>
                 <input 
@@ -148,7 +148,7 @@ useEffect(
             </div>
 </div>
 
-<     div className='flex gap-5 mt-[100px]'>
+<     div className='flex flex-col w-full sm:flex-row items-center justify-center gap-5 mt-[100px]'>
         <div className='flex flex-col w-[40%] items-start gap-9'>
           <p className='font-bold text-3xl'>Monthly Payment beakdown</p>
           <p className='font-semibold text-2xl'>{`$ ${total}/mo`}</p>
@@ -157,12 +157,12 @@ useEffect(
           </div>
         </div>
         <div className='flex flex-col w-[60%] gap-5'>
-          <div className='flex justify-between'>
+          <div className='flex  justify-between'>
             <p className='text-lg'>Principal & Interest</p>
             <p className='text-lg font-semibold'>{`$${monthlyPayment}`}</p>
           </div>
 
-          <div className='flex relative justify-between'>
+          <div className='flex gap-8 relative justify-between'>
             <p className='text-lg'>Homeowners insurance</p>
             <input type="text" className='text-right' 
             onChange={(e)=>setInsurance(e.target.value)}
@@ -170,7 +170,7 @@ useEffect(
             <p className='text-lg absolute top-0 right-[23%]'>$</p>
           </div>
 
-          <div className='flex relative justify-between'>
+          <div className='flex gap-8 relative justify-between'>
             <p className='text-lg'>HOA fees</p>
             <input type="text" className='text-right  ' 
             onChange={(e)=>setHoa(e.target.value)}
@@ -178,7 +178,7 @@ useEffect(
             <p className='text-lg absolute top-0 right-[23%]'>$</p>
           </div>
 
-          <div className='flex relative justify-between'>
+          <div className='flex gap-8 relative justify-between'>
             <p className='text-lg'>Utilities</p>
             <input type="text" className='text-right  ' 
             onChange={(e)=>setUtilities(e.target.value)}
@@ -187,7 +187,7 @@ useEffect(
           </div>
 
           
-          <div className='flex relative justify-between'>
+          <div className='flex gap-8 relative justify-between'>
             <p className='text-lg'>PMI</p>
             <input type="text" className='text-right  '
             onChange={(e)=>setPmi(e.target.value)}

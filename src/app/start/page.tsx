@@ -12,7 +12,7 @@ import Footer from '@/components/Footer'
 
 const page = () => {
   return (
-    <div className='px-[120px] pt-[0px]'>
+    <div className='lg:px-[120px] px-[50px] pt-[0px]'>
     <div className='fixed w-[85%]'>
     <StartNavbar />
     </div>
@@ -54,7 +54,7 @@ function CustomDiv({content, img}: {content: string, img: StaticImageData}){
         `}>
             <div className='w-[80%] flex gap-3 items-center'>
                 <img className='w-[15%] img' src={img.src} alt="" />
-                <div className='text-2xl font-bold'>
+                <div className='text-lg lg:text-2xl font-bold'>
                 {content}
                 </div>
             </div>
