@@ -1,7 +1,7 @@
 'use client'
 
 import Navbar from '@/components/Navbar'
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import mortage from '../../../images/photo/mortgage-calculator.webp'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
@@ -28,11 +28,11 @@ const Page = () => {
    
   }
 
-  const calculateMortgage = ({P, r, n}: MortageProps) => {
-    r = r / 1200; 
+  const calculateMortgage = useCallback(({ P, r, n }: MortageProps) => {
+    r = r / 1200;
     const M = P * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
     return parseFloat(M.toFixed(2));
-}
+  }, []);
 
 const handleChange = (event:  React.ChangeEvent<HTMLInputElement>)=> {
   setHomePrice(event.target.value)
@@ -55,7 +55,7 @@ useEffect(
     setToatal(final)
     
   }
-  ,[homePrice, monthlyPayment, downPayment, rate, time, insurance, hoa, utilites, pmi])
+  ,[homePrice, monthlyPayment, calculateMortgage, downPayment, rate, time, insurance, hoa, utilites, pmi])
 
   return (
     <div className='overflow-x-hidden'>

@@ -90,7 +90,7 @@ function Promotion(){
                  </div>
 
                  <div  className='flex gap-2 items-center justify-center'>
-                 <img className='w-[5%] img' src={mobile.src} alt="" />
+                 <Image className='w-[5%] img' src={mobile.src} alt="" />
                     <p>A personalized dashboard </p>
                  </div>
                 </div>
