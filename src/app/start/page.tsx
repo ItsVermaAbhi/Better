@@ -1,3 +1,5 @@
+'use client'
+
 import StartNavbar from '@/components/StartNavbar'
 import React from 'react'
 import first from '../../../images/photo/first.png'
@@ -10,7 +12,7 @@ import { StaticImageData } from 'next/image'
 import Footer from '@/components/Footer'
 
 
-const page = () => {
+const Page = () => {
   return (
     <div className='lg:px-[120px] px-[50px] pt-[0px]'>
     <div className='fixed w-[85%]'>
@@ -99,4 +101,4 @@ function Promotion(){
         </div>
     )
 }
-export default page
+export default Page

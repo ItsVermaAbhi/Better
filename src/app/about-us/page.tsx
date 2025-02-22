@@ -21,7 +21,7 @@ const links = {
 }
 
 
-const page = () => {
+const Page = () => {
   return (
     <div className='overflow-x-hidden'>
       <Navbar/>
@@ -125,9 +125,7 @@ function CompanyTimeline(){
             <Button content='2014'/>
             <div className='flex items-start ml-[20%]'>
             <ContentDiv content=
-            'After Vishal Garg’s first attempt to purchase his own dream home,   he quickly realized that the homebuying process is unnecessarily broken. This inspired him to found a technology-first
-              company led by engineers and data experts with the mission of digitizing and automating home finance to make it cheaper,
-               easier, and faster for all.'/>
+            'After Vishal Garg’s first attempt to purchase his own dream home,   he quickly realized that the homebuying process is unnecessarily broken. This inspired him to found a technology-first company led by engineers and data experts with the mission of digitizing and automating home finance to make it cheaper,             easier, and faster for all.'/>
             </div>
             <Button content='2015'/>
             <div className='flex items-center justify-center ml-[20%]'>
@@ -220,4 +218,4 @@ function ContentDiv({content}: {content:string}){
     )
 }
 
-export default page
+export default Page
