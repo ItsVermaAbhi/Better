@@ -2,12 +2,8 @@ import React from 'react'
 
 import avtar from '../../images/photo/avtar.jpg'
 
-import {Rajdhani} from 'next/font/google'
-import { MdCall } from 'react-icons/md'
 
-const rajdhani = Rajdhani({
-    weight: "600"
-})
+import { MdCall } from 'react-icons/md'
 
 const StartNavbar = () => {
   return (
@@ -15,7 +11,7 @@ const StartNavbar = () => {
         <img className='absolute h-[40%] lg:h-[55%] rounded-full left-[50%] bottom-[-20px]' src={avtar.src} alt="avtar" />
      <a href="/">
      <div className='flex flex-col '>
-        <h2 className={`green text-xl ${rajdhani.className}`}>Better</h2>
+      
         <h3 className='lg:text-xl text-base text-gray-400'>Mortage</h3>
       </div>
      </a>

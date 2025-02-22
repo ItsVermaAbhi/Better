@@ -1,11 +1,9 @@
 
 import React from 'react'
 import { MdCall } from "react-icons/md";
-import {Rajdhani} from "next/font/google"
 
-const rajdhani = Rajdhani({
-  weight: "700"
-})
+
+
 const BuyCardItems = ["Apply Now", "Purchase Rates", "Affordability Calculator", "Mortage Calculator", "Rent Vs Buy Calculator", "Find An Agent", "VA Loans", "Learning Center"]
 const RefinanceItems = ["Apply Now", "Refinance Rates", "Cast-out Refinance Calculator", "Learning Center"]
 const HelocItems = ["Apply Now", "Calculate Your Cash", "HELOC vs Cash-out Refinance", "Leaning Center"]
@@ -57,7 +55,7 @@ const Navbar = () => {
             const HoverComponent = hoverCards[item]
            
             return(
-              <div key={item} className={`relative group py-2 hover:text-black  ${item == "Better"? `${rajdhani.className}`: "sm:hover:text-black sm:hover:bg-white sm:hover:px-4 sm:px-4 sm:ease-in-out sm:duration-200 sm:hover:px-4 hidden sm:block  sm:rounded-full"}`}>
+              <div key={item} className={`relative group py-2 hover:text-black  ${item == "Better"? ``: "sm:hover:text-black sm:hover:bg-white sm:hover:px-4 sm:px-4 sm:ease-in-out sm:duration-200 sm:hover:px-4 hidden sm:block  sm:rounded-full"}`}>
                  <li key={item}  className={`text-white hover:text-black ${item=="Better"? "text-bold": "text-md hover:text-black sm:text-sm "} `}>{item}</li>
                 
                  {HoverComponent && (

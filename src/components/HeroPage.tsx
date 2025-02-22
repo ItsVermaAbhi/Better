@@ -1,5 +1,5 @@
 import React from 'react'
-import {Lato} from "next/font/google"
+
 
 import heroImage from "../../images/photo/hero-image.webp"
 import googlelogo  from "../../images/photo/google.png"
@@ -7,9 +7,7 @@ import star  from "../../images/photo/star.png"
 import halfStar  from "../../images/photo/halfStar.png"
 import { TbClockHour6 } from 'react-icons/tb'
 
-const lato = Lato({
-    weight: "900"
-})
+
 
 
 const HeroPage = () => {
@@ -17,7 +15,7 @@ const HeroPage = () => {
     <div className='relative h-[110vh] w-full  md:h-[110vh] bg-[#004733] md:pb-[100px] z-10 overflow-hidden'>
       <img className='absolute left-[16%] sm:left-[25%] h-[72%] bottom-[-10%] md:h-[90vh] md:pb-[100px] md:h-[80vw] md:bottom-[-20%] lg:left-[35%] lg:h-[50vw] md:left-[30%]' src={heroImage.src} alt="" />
       <div className='absolute top-[15%] left-[25%] w-[45vw] leading-[100px]'>
-        <h1 className={`text-[#1ee07f] leading-[50px] pl-[10px] pt-[20px] text-[42px] sm:text-[40px] md:pt-[50px] lg:text-[110px] lg:leading-[100px] md:text-[70px] md:leading-[80px] text-center ${lato.className}`}>Mortages made simple</h1>
+        <h1 className={`text-[#1ee07f] leading-[50px] pl-[10px] pt-[20px] text-[42px] sm:text-[40px] md:pt-[50px] lg:text-[110px] lg:leading-[100px] md:text-[70px] md:leading-[80px] text-center `}>Mortages made simple</h1>
       </div>
       <div className='absolute top-[29%] left-[29%] sm:left-[28%] md:top-[60%] md:left-[15%] text-center'>
         <div className='flex flex-col '>
