@@ -2,20 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  /* color: var(--foreground);
+   */
+   padding: 0;
+   margin: 0;
+
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.img {
+  filter: invert(39%) sepia(86%) saturate(624%) hue-rotate(111deg);
+}
+
+
+.light-green{
+  background-color: #f0f7f1;
+}
+.green{
+  color: #004733
+}
+
+.button{
+  background-color: #067a41;
+}
+
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90vw;
+  height: 8px;
+  background: gray; /* Default track color */
+  outline: none;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: gray; /* Track color */
+  height: 8px; /* Track height */
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90vw;
+  height: 8px;
+  background: #ddd; /* Track color */
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.2s;
+}
+
+/* This styles the progress part of the track */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 5px;
+  background: linear-gradient(to right, black var(--progress), #ddd var(--progress)); /* Dynamic progress color */
+}
+
+input[type="range"]::-moz-range-progress {
+  background: black; /* Mozilla-specific progress */
+  height: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: black; /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  margin-top: -6px;
+}
+
+
+
