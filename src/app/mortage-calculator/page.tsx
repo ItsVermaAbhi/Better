@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 import mortage from '../../../images/photo/mortgage-calculator.webp'
 import Footer from '@/components/Footer'
 
-const page = () => {
+const Page = () => {
 
   const  [homePrice, setHomePrice] = useState("50000")
   const [monthlyPayment, setMonthlyPayment] = useState("844")
@@ -212,4 +212,4 @@ useEffect(
   )
 }
 
-export default page
+export default Page

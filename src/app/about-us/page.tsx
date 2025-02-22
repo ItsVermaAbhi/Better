@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar'
 import React from 'react'
-import vishalImage from '../../../images/photo/vishal-mission.jpg'
+// import vishalImage from '../../../images/photo/vishal-mission.jpg'
 import softbank from '../../../images/logo/softbank.svg'
 import ally from '../../../images/logo/ally.jpg'
 import citi from '../../../images/logo/citi.svg'
@@ -8,7 +8,7 @@ import goldman from '../../../images/logo/goldmanSachs.svg'
 import kpcb from '../../../images/logo/kpcb.webp'
 import americanExpree from '../../../images/logo/American_Express_logo_(2018).svg.png'
 import Footer from '@/components/Footer'
-import { AiOutlinePlayCircle } from 'react-icons/ai'
+// import { AiOutlinePlayCircle } from 'react-icons/ai'
 
 const logos = [softbank, ally, citi, goldman, kpcb,americanExpree]
 const links = {

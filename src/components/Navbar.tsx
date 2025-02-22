@@ -10,7 +10,7 @@ const HelocItems = ["Apply Now", "Calculate Your Cash", "HELOC vs Cash-out Refin
 const RatesItems = ["Purchase Mortage Rates", "Refinance Rates", "Refinance Cash-Out Rates", "HELOC Rates", "Purchase VA Rates"]
 const BetterItems = ["Get Insurance", "Title And Closing", "Better Attorney Match", "Learning Center", "Better Agent Match", "Better Duo"]
 
-function CardDesign(items: String[]){
+function CardDesign(items: string[]){
   return (
     <div className='border-2 py-3 px-5 w-[20vw] rounded text-black bg-white'>
       {items.map((item, index)=>{

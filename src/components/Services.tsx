@@ -94,8 +94,7 @@ const Services = () => {
             <div className="flex gap-3 border-2  lg:col-span-2 lg:col-start-2  px-[5%] py-[4%] bg-[#f0f7f1]">
             <div className='flex flex-col gap-6'>
                 <h2 className='text-[#004733] font-semibold text-2xl'>Affordability Calculator<sup>1</sup></h2>
-                <p className='text-[#004733]'>Got homeownership dreams? Let's puts some numbers behind them. Our affordability calculator
-                    estimates the maximum home you can afford.<sup>1</sup>
+                <p className='text-[#004733]'>Got homeownership dreams? Let's puts some numbers behind them. Our affordability calculator estimates the maximum home you can afford.<sup>1</sup>
                 </p>
                 <div><IoIosArrowRoundForward className='font-bold size-8 border-2
                 hover:bg-[#004733] hover:text-white ease-in-out duration-200 text-[#004733] rounded-full  border-gray-400'/></div>
@@ -162,8 +161,7 @@ const Services = () => {
                 </div>
                 <div className='flex flex-col gap-6'>
                     <h2 className='text-[#004733]  font-semibold text-2xl'>Timeline for homebuying process<sup>1</sup></h2>
-                    <p className='text-[#004733]'>Does the process of buying a home seem daunting? Don't stress. We broke it down in 
-                        8 easy steps.<sup>1</sup>
+                    <p className='text-[#004733]'>Does the process of buying a home seem daunting? Don't stress. We broke it down in 8 easy steps.<sup>1</sup>
                     </p>
                     <div><IoIosArrowRoundForward className='font-bold size-8 border-2 text-[#004733] rounded-full  border-gray-400
                     hover:bg-[#004733] hover:text-white ease-in-out duration-200'/></div>

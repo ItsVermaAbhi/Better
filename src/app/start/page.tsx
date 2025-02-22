@@ -32,10 +32,7 @@ function Content(){
     return (
         <div className='pb-9'>
            <div className='flex flex-col gap-2 items-center'>
-           <h1 className='text-5xl font-bold'>
-            Hi, I'm Betsy!
-            
-            </h1>
+           <h1 className='text-5xl font-bold'>Hi, I'm Betsy!</h1>
             <h1  className='text-5xl font-bold'>What can I help you with?</h1>
            </div>
 

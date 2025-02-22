@@ -27,7 +27,7 @@ const Landing = () => {
         </div>
       </div>
       <div className='order-1 md:order-2 flex justify-center items:center md:justify-left md:items-start flex-col'>
-        <h1 className='text-[60px] md:text-[80px] md:leading-[90px] lg:text-[90px] lg:leading-[90px] text-left leading-[90px] text-black font-medium '>Find out why we're better</h1>
+        <h1 className='text-[60px] md:text-[80px] md:leading-[90px] lg:text-[90px] lg:leading-[90px] text-left leading-[90px] text-black font-medium '>Find out why we are better</h1>
         <button className='bg-[#004733] text-white px-8 py-4 my-3 rounded-full  '>See all our stories</button>
         <div className='text-gray-500 flex gap-2 justify-center items-center'>
           <div className=''>
